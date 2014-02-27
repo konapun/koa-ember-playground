@@ -1,2 +1,4 @@
 KoaEmberPlayground.Store = DS.Store.extend();
-KoaEmberPlayground.ApplicationAdapter = DS.FixtureAdapter;
+KoaEmberPlayground.ApplicationAdapter = DS.LSAdapter.extend({
+  namespace: 'stories'
+});

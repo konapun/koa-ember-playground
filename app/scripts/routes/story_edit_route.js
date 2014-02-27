@@ -1,6 +1,6 @@
-KoaEmberPlayground.KonapunEditRoute = Ember.Route.extend({
+KoaEmberPlayground.StoryEditRoute = Ember.Route.extend({
   model: function(params) {
-    return this.get('store').find('konapun', this.modelFor('konapun').id);
+    return this.get('store').find('story', this.modelFor('story').id);
   },
   setupController: function(controller, model){
     controller.set('model', model);

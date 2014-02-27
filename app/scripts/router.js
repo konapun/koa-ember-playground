@@ -1,7 +1,7 @@
 KoaEmberPlayground.Router.map(function () {
   
   this.resource('index', {path: '/'});
-  this.resource('konapun', {path: '/konapun/:konapun_id'});
-  this.resource('konapun_edit', {path: '/konapun/new'});
+  this.resource('story', {path: '/story/:story_id'});
+  this.resource('story_edit', {path: '/story/new'});
   
 });

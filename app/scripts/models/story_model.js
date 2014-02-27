@@ -1,13 +1,15 @@
 /*global Ember*/
-KoaEmberPlayground.Konapun = DS.Model.extend({
-  manufacturer: DS.attr('string'),
+KoaEmberPlayground.Story = DS.Model.extend({
+  url: DS.attr('string'),
   tags: DS.attr('string'),
-  description: DS.attr('string'),
-  image: DS.attr('string')
+  fullname: DS.attr('string'),
+  title: DS.attr('string'),
+  excerpt: DS.attr('string'),
+  submittedOn: DS.attr('date')
 });
 
 // probably should be mixed-in...
-KoaEmberPlayground.Konapun.reopen({
+KoaEmberPlayground.Story.reopen({
   attributes: function(){
     var model = this;
     return Ember.keys(this.get('data')).map(function(key){
@@ -17,7 +19,7 @@ KoaEmberPlayground.Konapun.reopen({
 });
 
 // delete below here if you do not want fixtures
-KoaEmberPlayground.Konapun.FIXTURES = [
+KoaEmberPlayground.Story.FIXTURES = [
   
   {
     id: 0,
