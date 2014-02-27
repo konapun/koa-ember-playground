@@ -1,2 +1,2 @@
-Test.Store = DS.Store.extend();
-Test.ApplicationAdapter = DS.FixtureAdapter;
+KoaEmberPlayground.Store = DS.Store.extend();
+KoaEmberPlayground.ApplicationAdapter = DS.FixtureAdapter;

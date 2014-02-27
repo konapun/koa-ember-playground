@@ -1,4 +1,4 @@
-var Test = window.Test = Ember.Application.create();
+var KoaEmberPlayground = window.KoaEmberPlayground = Ember.Application.create();
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
