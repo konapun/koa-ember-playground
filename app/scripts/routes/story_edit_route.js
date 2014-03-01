@@ -1,5 +1,6 @@
 KoaEmberPlayground.StoryEditRoute = Ember.Route.extend({
   model: function(params) {
+    alert("Model: " + this.modelFor('story'));
     return this.get('store').find('story', this.modelFor('story').id);
   },
   setupController: function(controller, model){
