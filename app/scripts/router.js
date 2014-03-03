@@ -1,7 +1,10 @@
 KoaEmberPlayground.Router.map(function () {
   
-  this.resource('index', {path: '/'});
-  this.resource('story', {path: '/story/:story_id'});
-  this.resource('story_edit', {path: '/story/new'});
+  this.resource('users', function(){
+    this.resource('user', { path: '/:user_id' }, function(){
+      this.route('edit');
+    });
+    this.route('create');
+  });
   
 });
