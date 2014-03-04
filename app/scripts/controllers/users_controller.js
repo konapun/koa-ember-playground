@@ -7,6 +7,6 @@ KoaEmberPlayground.UsersController = Ember.ArrayController.extend({
    */
   usersCount: function() {
     return this.get('model.length');
-  }.property('@each') // watch for changes to this controller's model
+  }.property('@each') // computed property; watch for changes to this controller's model
 });
 
