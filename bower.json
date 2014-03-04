@@ -6,7 +6,8 @@
     "handlebars": "1.2.1",
     "ember-data": "~0.0.14",
     "bootstrap-sass": "~3.0.0",
-    "ember-localstorage-adapter": "~0.2.0"
+    "ember-localstorage-adapter": "~0.2.0",
+    "moment": "~2.5.1"
   },
   "devDependencies": {
     "ember-mocha-adapter": "0.1.2"
