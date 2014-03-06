@@ -13,15 +13,6 @@
   {{/each}}
 </table>
 
-{{#if deleteMode}}
-MY BOX!!
-<div class="confirm-box">
-  <h4>Are you sure?</h4>
-  <button {{action 'confirmDelete'}}>yes</button>
-  <button {{aciton 'cancelDelete'}}>no</button>
-</div>
-{{/if}}
 <button {{action 'save'}}>Update</button>
-<button {{action 'delete'}}>Delete</button>
 
 {{outlet}}

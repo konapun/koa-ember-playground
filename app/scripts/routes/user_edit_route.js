@@ -4,10 +4,10 @@ KoaEmberPlayground.UserEditRoute = Ember.Route.extend({
   },
   setupController: function(controller, model){
     controller.set('model', model);
-    buffer = model.get('attributes').map(function(attr){
+    var buffer = model.get('attributes').map(function(attr){
       return { key: attr.get('key'), value: attr.get('value') }
     });
-    controller.set('buffer', buffer)
+    controller.set('buffer', buffer);
   }
 });
 

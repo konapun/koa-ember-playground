@@ -13,6 +13,13 @@
   {{/each}}
 </table>
 
+{{#if deleteMode}}
+<div class="configm-box">
+  <h4>Confirm delete?</h4>
+  <button {{action 'confirmDelete'}}>Yes</button>
+  <button {{action 'cancelDelete'}}>No</button>
+</div>
+{{/if}}
 {{#link-to 'user.edit' model}}Change{{/link-to}}
-
+<button {{action 'delete'}}>Delete</button>
 {{outlet}}
