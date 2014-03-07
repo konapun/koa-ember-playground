@@ -1,0 +1,9 @@
+<h1>Playsets</h1>
+
+<ul>
+ {{#each model}}
+ <li>{{#link-to 'playset' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
