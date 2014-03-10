@@ -1,13 +1,19 @@
 <!-- Let's try one page scroll with Ember -->
-<div class="main">
+{{#view KoaEmberPlayground.OnePageScroll}}
   <section class="first">
     <h1>Konapun Experiment</h1>
     <h4>Testing out a variety of things just for fun</h4>
   </section>
   <section class="second">
-    Second section
+    <h1>Konapun Powder</h1>
+    <h4>Colors/styles/etc.</h4>
   </section>
   <section class="third">
-    Third section
+    <h1>Playsets</h1>
+    <h4>Choose a konapun playset</h4>
   </section>
-</div>
+{{/view}}
+
+<!-- FIXME: This should be a grunt task -->
+<script src="bower_components/onepage-scroll/jquery.onepage-scroll.js"></script>
+
